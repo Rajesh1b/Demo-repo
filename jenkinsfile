@@ -10,7 +10,7 @@ pipeline{
 		stage('hello'){
 			steps{
 				sh'touch 3.txt'
-				echo "hello world">>3.txt
+				sh "echo 'hello world' >> 3.txt"
 			}
 		}
 	}
